@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp"
-android:id="@+id/main">
-
-<TextView
-    android:id="@+id/title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Informasi Papan Seluncur"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    android:layout_gravity="center"/>
-
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recyclerView"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="16dp"/>
-</LinearLayout>
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
 
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di Penyewaan Papan Surfing"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_gambar1"/>
+
+    <Button
+        android:id="@+id/btn_sewapapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sewa Papan Surfing"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_Dafrtarpapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Daftar Papan Surfing Tersedia"/>
+
+</LinearLayout>

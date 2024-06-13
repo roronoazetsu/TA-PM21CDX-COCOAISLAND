@@ -1,11 +1,6 @@
 package com.example.penyewaan_papan_surfing
 
-import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-data class SurfboardActivity(
+data class sewapapandActivity(
     val id: String,
     val brand: String,
     val model: String,
