@@ -11,6 +11,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 abstract class MainActivity : AppCompatActivity(), View.OnClickListener {
+    abstract val sewapapan: Unit
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +28,7 @@ abstract class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.btn_sewapapan -> {
-                val intent = Intent(this@MainActivity, sewapapandActivity::class.java)
+                val intent = Intent(this@MainActivity, sewapapan::class.java)
                 startActivity(intent)
             }
 

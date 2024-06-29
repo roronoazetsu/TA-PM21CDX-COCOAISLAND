@@ -1,10 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sewapapandActivity">
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_sewapapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="SEWA PAPAN SURFING:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/shapeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/shapeRound"
+            android:layout_width="387dp"
+            android:layout_height="35dp"
+            android:text="Pilih Papan Surfing" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/ic_gambar2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonsewapapan"
+            android:layout_width="387dp"
+            android:layout_height="35dp"
+            android:text="Ukuran papan surfing" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/ic_gambar3" />
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/etTanggal"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal" />
+
+    <EditText
+        android:id="@+id/etDurasi"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:hint="Durasi (jam)"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TypeLabelTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="PILIH UKURAN PAPAN "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/TypeRadioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radio_papanbesar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papan Besar" />
+
+    <RadioButton
+        android:id="@+id/radio_papansedang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papan Sedang" />
+
+    <RadioButton
+        android:id="@+id/radio_papankecil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papan Kecil" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSewa"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="Checkout" />
+
+        <Button
+            android:id="@+id/btnBatal"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="Batal" />
+
+    </LinearLayout>
+    </RadioGroup>
+</LinearLayout>
